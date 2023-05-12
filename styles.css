@@ -1,0 +1,125 @@
+/* ---------------HTML_BODY--------------- */
+html {
+    scroll-behavior: smooth;
+}
+/* ---------------HTML_BODY--------------- */
+/* ---------------NAVBAR--------------- */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+#barra-nav{
+    font-size: 25px;
+    background-color: rgb(237,28,36);
+    color: white;
+}
+#barra-nav a{
+    color: white;
+}
+#barra-nav li a:hover{
+    background-color: rgba(105, 15, 18, 0.4);
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+#barra-nav span{
+    background-color: rgb(255,255,255)
+}
+/* ---------------NAVBAR--------------- */
+/* ---------------INICIO--------------- */
+#contenedor-inicio{
+    background-image: url('https://elviajerofeliz.com/wp-content/uploads/2020/09/comida-tipica-de-china.jpg');
+    background-size: cover; /* para que la imagen cubra todo el div */
+}
+#contenedor-inicio div{
+    color: rgb(255,255,255);
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    background: rgb(0, 0, 0,0.5);
+}
+/* ---------------INICIO--------------- */
+/* ---------------SOBRE_NOSOTROS--------------- */
+#contenedor-sobre-nosotros{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,28,36,1) 0%, rgba(240,150,150,1) 90% );
+    color: rgb(255,255,255);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+#contenedor-sobre-nosotros p{
+    font-size: 15px;
+}
+#contenedor-sobre-nosotros img{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow:0px 5px 10px rgb(0, 0, 0,0.4);
+    margin-left: 15%;
+}
+
+/* ---------------SOBRE_NOSOTROS--------------- */
+/* ---------------MENU--------------- */
+#contenedor-menu{
+    padding-left: 5%;
+}
+#carta-p {
+    position: relative;
+    background-color: rgb(231,233,235);
+    border-radius: 5px;
+    box-shadow:0px 5px 10px rgb(0, 0, 0,0.4);
+    margin: 20px;
+}
+.card-front, .card-back {
+    backface-visibility: hidden; /* Evita el efecto "cara oculta" */
+    transition: transform 0.6s ease; /* Agrega una transición suave */
+}
+
+.card-front{
+    /* Estilos de la cara frontal de la carta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front h3 {
+    /* Estilos de la cara frontal de la carta */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 45px;
+    background: rgb(0, 0, 0,0.4);
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255,255,255);
+}
+
+.card-back {
+    transform: rotateY(180deg); /* Voltea la cara trasera de la carta */
+    /* Estilos de la cara trasera de la carta */
+}
+.card-back p{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20%;
+    height: auto;
+    width: auto;
+    border-radius: 9px;
+    box-shadow:0px 5px 10px rgb(0, 0, 0,0.4);
+    background: rgb(0, 0, 0,0.2);
+}
+
+#carta-p:hover .card-front  {
+    transform: rotateY(180deg); /* Voltea la carta hacia atrás en hover */
+}
+
+#carta-p:hover .card-back {
+    transform: rotateY(0deg); /* Voltea la carta hacia adelante en hover */
+}
+/* ---------------MENU--------------- */
+/* ---------------PIE_PAGINA--------------- */
+#contenedor-pie{
+    color: rgb(255,255,255);
+}
+/* ---------------PIE_PAGINA--------------- */
