@@ -1,84 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Leñador</title>
-    <!-- Estilos CSS-->
-    <link rel="stylesheet" href="styles.css">
-    <!-- JavaScript -->
-    <link rel="stylesheet" href="script.js">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>EL Leñador</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="styles_c.css">
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body id="body">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-fixed-top" id="barra-nav">
-        <div class="container-fluid" id="barra-nav-1">
-            <ul class="nav navbar-nav text-center" >
-                <li><a href="#" style="color:white;">Inicio</a></li>
-                <li><a href="#Sobre_Nosotros" style="color:white;">Sobre nosotros</a></li>
-                <li><a href="#Menu" style="color:white;">Menús</a></li>
-                <li><a href="#Conocenos" style="color:white;">Conócenos</a></li>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-fixed-top" id="barra-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#barra-nav">El Leñador</a>
+            <img src="https://chifalagranmuralla.com/wp-content/uploads/2020/06/logo.png" alt="logo chifa" width="35px">
+            
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#contenedor-inicio">Inicio</a></li>
+                <li><a href="#contenedor-sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contenedor-menu">Menús</a></li>
+                <li><a href="#pie-pagina">Conócenos</a></li>
+                <li><a href="#contenedor-sucursales">Sucursales</a></li>
             </ul>
         </div>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.querySelector(".navbar-fixed-top").classList.remove("hidden");
-        } else {
-            document.querySelector(".navbar-fixed-top").classList.add("hidden");
-        }
-        prevScrollpos = currentScrollPos;
-        }
-    </script>
-    <!-- NAVBAR -->
-    <!-- INICIO -->
-    <div class="row" id="contenedor-inicio-1">
-        <div class="col-sm-6 text-center" id="contenedor-inicio">
-            <h1>El Leñador</h1>
-            <p>"El Leñador" es un restaurante que combina la rica tradición culinaria de China con los sabores y técnicas de cocción Ecuatoriana.</p>
-        </div>
     </div>
-    <br>
-    <!-- INICIO -->
-    <!-- SOBRE NOSOTROS -->
-    <article class="contenedor-sobre" id="Sobre_Nosotros">
-        <div class="contenedor-sobre-p">
-            <div class="col-sm-6 text-justify mx-auto">
-                <h1>Sobre Nosotros</h1>
-                "El Leñador" es un restaurante que combina la rica tradición culinaria de China con los sabores y técnicas de cocción Ecuatoriana. Nuestra carta cuenta con una amplia variedad de platos chifa, desde los clásicos arroces y tallarines saltados hasta opciones más modernas e innovadoras. Todos nuestros platos están preparados con ingredientes frescos y de alta calidad, y nuestro equipo de chefs altamente capacitados se asegura de que cada plato
-            </div>
-            <div class="text-center">
-                <img src="https://chifa-centro.com/wp-content/uploads/2019/02/IMG_1934.jpg" alt="" width="400px" style="padding-bottom:1rem;">
-            </div>
-        </div>
-    </article>
-    <br>
-    <!-- SOBRE NOSOTROS -->
-    <!-- MENÚs -->
-    <!-- PRUEBAS -->
+</nav>
+<!-- NAVBAR -->
+<!-- INICIO -->
+<div class="jumbotron" id="contenedor-inicio">
+    <div class="container text-center">
+        <h1>El Leñador</h1>      
+        <p>"El Leñador" es un restaurante que combina la rica tradición culinaria de China con los sabores y técnicas de cocción Ecuatoriana.</p>
+    </div>
+</div>
+<!-- SOBRE NOSOTROS -->
+<div class="container-fluid bg-3 text-center" id="contenedor-sobre-nosotros"> 
     <div class="row">
-        <div class="com-md-6 text-center" id="Menu">
-            <h1>Nuestro Menú</h1>
+        <div class="col-sm-6">
+            <h1>Sobre Nosotros</h1>
+            <p>"El Leñador" es un restaurante que combina la rica tradición culinaria de China con los 
+                sabores y técnicas de cocción Ecuatoriana. Nuestra carta cuenta con una amplia variedad de platos chifa, desde los clásicos arroces y tallarines saltados hasta opciones más modernas e innovadoras. Todos nuestros platos están preparados con ingredientes frescos y de alta calidad, y nuestro equipo de chefs altamente capacitados se asegura de que cada plato</p>
+        </div>
+        <div class="col-sm-6">
+            <img 
+            class="img-responsive"
+            src="https://chifa-centro.com/wp-content/uploads/2019/02/IMG_1934.jpg" alt="" width="100px">
         </div>
     </div>
-    <div class="row text-center" id="contenedor-partes-1">
-        <div class="col-sm-4" id="carta-p">
+</div>
+<!-- SOBRE NOSOTROS -->
+<!-- INICIO -->
+<!-- MENUS -->
+<div class="container-fluid bg-3 text-center col-sm-offset-1" id="contenedor-menu">    
+    <h1>Nuestro Menú</h1><br>
+    <div class="row" id="contenedor-cartas">
+        <div class="col-sm-3" id="carta-p">
             <div class="card-front">
                 <h3>Arroces</h3>
-                <img src="https://elmundoenrecetas.s3.amazonaws.com/uploads/recipe/main_image/810/chaulafan.webp" alt="chaulafan" class="img-rounded" width="400px" height="240px">
+                <img 
+                class="img-responsive"
+                src="https://elmundoenrecetas.s3.amazonaws.com/uploads/recipe/main_image/810/chaulafan.webp" alt="chaulafan" class="img-rounded" width="400px" height="240px">
             </div>
             <div class="card-back">
                 <p>El arroz es un ingrediente fundamental en la mayoría de los platos de chifa.
@@ -87,10 +79,12 @@
                 </p>
             </div>
         </div>
-        <div class="col-sm-4" id="carta-p">
+        <div class="col-sm-3" id="carta-p">
             <div class="card-front">
                 <h3>Tallarines</h3>
-                <img src="https://cdn0.recetasgratis.net/es/posts/9/3/5/tallarines_chinos_con_pollo_22539_600.jpg" alt="chaulafan" class="img-rounded" width="400px" height="240px">
+                <img 
+                class="img-responsive"
+                src="https://cdn0.recetasgratis.net/es/posts/9/3/5/tallarines_chinos_con_pollo_22539_600.jpg" alt="chaulafan" class="img-rounded" width="400px" height="240px">
             </div>
             <div class="card-back">
                 <p>Los platos con tallarines pueden incluir carnes, como pollo, res, cerdo o mariscos. También se pueden agregar 
@@ -98,10 +92,12 @@
                 </p>
             </div>
         </div>
-        <div class="col-sm-4" id="carta-p">
+        <div class="col-sm-3" id="carta-p">
             <div class="card-front">
                 <h3>Salteados</h3>
-                <img src="https://www.deliciosi.com/images/1000/1070/pollo-con-verduras.jpg" alt="chaulafan" class="img-rounded" width="400px" height="240px">
+                <img 
+                class="img-responsive"
+                src="https://www.deliciosi.com/images/1000/1070/pollo-con-verduras.jpg" alt="chaulafan" class="img-rounded" width="400px" height="240px">
             </div>
             <div class="card-back">
                 <p>Estos platos generalmente incluyen carne (como pollo, res, cerdo o mariscos) que se corta en tiras o cubos 
@@ -111,8 +107,8 @@
             </div>
         </div>
     </div>
-    <div class="row text-center" id="contenedor-partes-1">
-        <div class="col-sm-4" id="carta-p">
+    <div class="row" id="contenedor-cartas">
+        <div class="col-sm-3" id="carta-p">
             <div class="card-front">
                 <h3>Sopas</h3>
                 <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/b3f3f07fe1a38077de4b0cc50a08888f.jpg" alt="chaulafan" class="img-rounded" width="400px" height="240px">
@@ -137,7 +133,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-sm-4" id="carta-p">
+        <div class="col-sm-3" id="carta-p">
             <div class="card-front">
                 <h3>Postres</h3>
                 <img src="https://www.gourmet.cl/wp-content/uploads/2011/04/galletas_fortuna.jpg" alt="chaulafan" class="img-rounded" width="400px" height="240px">
@@ -149,26 +145,40 @@
             </div>
         </div>
     </div>
-    <!-- PRUEBAS -->
-    <br>
-    <!-- MENÚs -->
-    <!-- PIE DE PÁGINA -->
-    <footer class="pie-pagina" id="Conocenos">
-        <div class="row ">
-            <div class="col-sm-6 mx mx-auto" id="contenedor-pie">
-                <h3>Te esperamos</h3>
-                <h3>El Leñador</h3>
-                <h3>Av. Pablo Guarderas, Machachi</h3>
-                <h3>0998168869</h3>
-                <h3>Abierto desde las 8:00 am hasta las 20:00 pm</h3>
-                <h2></h2>
-            </div>
-            <div class="col-sm-6 text-center" id="contenedor-pie">
-                <h3>Conoce como llegar!</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.661056380067!2d-78.568652!3d-0.5087180000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a98818f3eb37%3A0x40014689e13244e3!2sChifa%20El%20Le%C3%B1ador!5e0!3m2!1ses-419!2sec!4v1683678479260!5m2!1ses-419!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+</div><br>
+<!-- MENUS -->
+<!-- SUCURSALES -->
+<div class="container-fluid bg-3 text-center" id="contenedor-sucursales">
+    <h1>Conoce nuestras Sucursales</h1><br>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Sucursal 1</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858.3156615560407!2d-78.56801965524194!3d-0.5104820963184461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a9086540cab5%3A0x3457f6eea10f2bd2!2sChifa%20China%20Machachi!5e0!3m2!1ses!2sec!4v1683722000130!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </footer>
-    <!-- PIE DE PÁGINA -->
+        <div class="col-sm-6">
+            <h2>Sucursal 2</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.661056380067!2d-78.568652!3d-0.5087180000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a98818f3eb37%3A0x40014689e13244e3!2sChifa%20El%20Le%C3%B1ador!5e0!3m2!1ses-419!2sec!4v1683678479260!5m2!1ses-419!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div><br>
+<!-- SUCURSALES -->
+<!-- PIE DE PAGINA -->
+<footer class="container-fluid text-center" id="pie-pagina" style="background-color: rgb(44,45,44);">
+    <div class="row ">
+        <div class="col-sm-6 mx mx-auto" id="contenedor-pie">
+            <h3>Te esperamos</h3>
+            <h3>El Leñador</h3>
+            <h3>Av. Pablo Guarderas, Machachi</h3>
+            <h3>0998168869</h3>
+            <h3>Abierto desde las 8:00 am hasta las 20:00 pm</h3>
+            <img src="https://chifalagranmuralla.com/wp-content/uploads/2020/06/logo.png" alt="logo chifa" width="100px">
+        </div>
+        <div class="col-sm-6 text-center" id="contenedor-pie">
+            <h3>Conoce como llegar!</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31917.257659399613!2d-78.58505325150885!3d-0.5149057167226412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a953515be3f3%3A0xb41782f20311fe43!2sMachachi!5e0!3m2!1ses!2sec!4v1683722097573!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+<!-- PIE DE PAGINA -->
 </body>
 </html>
